@@ -1,0 +1,38 @@
+package edu.javacourse.studentorder.domain;
+
+import java.time.LocalDate;
+
+public class Child extends Person {
+
+     private  String sertificateNumber;
+     private LocalDate issueDate;
+     private  String issueDepartament;
+
+    public Child(String surName, String givenName, String patronymic, LocalDate dateOfBirth) {
+        super(surName, givenName, patronymic, dateOfBirth);
+    }
+
+    public void setSertificateNumber(String sertificateNumber) {
+        this.sertificateNumber = sertificateNumber;
+    }
+
+    public void setIssueDate(LocalDate issueDate) {
+        this.issueDate = issueDate;
+    }
+
+    public void setIssueDepartament(String issueDepartament) {
+        this.issueDepartament = issueDepartament;
+    }
+
+    public String getSertificateNumber() {
+        return sertificateNumber;
+    }
+
+    public LocalDate getIssueDate() {
+        return issueDate;
+    }
+
+    public String getIssueDepartament() {
+        return issueDepartament;
+    }
+}
